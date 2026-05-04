@@ -1,0 +1,78 @@
+/* Màu sắc tùy chỉnh theo hình ảnh */
+:root {
+    --main-orange: #e45a33;
+    --dark-bg: #222529;
+    --light-grey: #e9ecef;
+    --btn-grey: #90a4ae;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.bg-orange {
+    background-color: var(--main-orange) !important;
+}
+
+.bg-dark-custom {
+    background-color: var(--dark-bg);
+}
+
+.bg-light-custom {
+    background-color: var(--light-grey);
+}
+
+.orange-text {
+    color: var(--main-orange);
+}
+
+/* Nút bấm Shop Now & Add to cart */
+.btn-secondary-custom {
+    background-color: var(--btn-grey);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 25px;
+    transition: 0.3s;
+}
+
+.btn-secondary-custom:hover {
+    background-color: #78909c;
+    color: white;
+}
+
+/* Navbar căn chỉnh */
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding-right: 20px !important;
+}
+
+/* Container cho ảnh sản phẩm để giữ kích thước đều */
+.product-img-container {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Footer Scroll Top Icon */
+.scroll-top {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
